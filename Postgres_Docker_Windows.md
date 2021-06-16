@@ -2,7 +2,7 @@
 
 0. Install Docker for Windows
 1. run in cmd docker "docker pull postgres" to get the latest docker image
-2. run in cmd docker run -e POSTGRES_PASSWORD=chooseOwnPassword --name pg_docker -d -p 5433:5433 -v postgres
+2. run in cmd docker run --rm -e POSTGRES_PASSWORD=chooseOwnPassword --name pg_test -P postgres
 3. go to cli of running postgres docker container with name pg_docker
 4. in cli enter "su - postgres"
 5. in cli enter "create user testuser" to create the user with name testuser
