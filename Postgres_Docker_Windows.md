@@ -5,7 +5,7 @@
 2. run in cmd docker run --rm -e POSTGRES_PASSWORD=chooseOwnPassword --name pg_test -P postgres
 3. go to cli of running postgres docker container with name pg_test
 4. in cli enter "su - postgres"
-5. in cli enter "create user testuser" to create the user with name testuser
+5. in cli enter "createuser testuser" to create the user with name testuser
 6. in cli enter "createdb testdb" to create the the db with name testdb
 7. in cli enter "psql" to access postgres shell
 8. in postgres shell enter "alter user testuser with encrypted password 'qwerty';" to set the password for testuser
